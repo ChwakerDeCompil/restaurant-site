@@ -1,0 +1,25 @@
+footer {
+    background-color: $primary-color;
+    color: white;
+    padding: $padding-base;
+    text-align: center;
+  
+    nav {
+      margin: 20px 0;
+  
+      a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        @include transition(color);
+  
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  
+    p {
+      margin: 10px 0;
+    }
+  }

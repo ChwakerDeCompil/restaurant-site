@@ -1,0 +1,119 @@
+header {
+  background-color: rgb(26, 25, 25);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  max-width: 150px;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+  color: rgb(255, 3, 192);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  header nav ul {
+    margin-top: 20px;
+  }
+}
+.menu {
+  padding: 20px;
+}
+.menu h2 {
+  color: rgb(26, 25, 25);
+  text-align: center;
+  margin-bottom: 30px;
+}
+.menu h3 {
+  color: rgb(255, 3, 192);
+  margin-top: 30px;
+}
+.menu ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.menu ul li h4 {
+  margin-top: 0;
+}
+.menu ul li .price {
+  font-weight: bold;
+  color: rgb(26, 25, 25);
+}
+
+@media screen and (max-width: 768px) {
+  .menu ul {
+    grid-template-columns: 1fr;
+  }
+}
+.about {
+  background-color: #b4b1b1;
+  padding: 20px;
+}
+.about h2 {
+  color: rgb(233, 14, 14);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: rgb(26, 25, 25);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+footer nav {
+  margin: 20px 0;
+}
+footer nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+footer nav a:hover {
+  color: rgb(255, 3, 192);
+}
+footer p {
+  margin: 10px 0;
+}
+
+body {
+  font-family: "myfont", sans-serif;
+  line-height: 1.6;
+  color: rgb(26, 25, 25);
+}
+
+.button {
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  background-color: rgb(255, 3, 192);
+  color: rgb(24, 22, 22);
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #cf009b;
+}/*# sourceMappingURL=main.css.map */

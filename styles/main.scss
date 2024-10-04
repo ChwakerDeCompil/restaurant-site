@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'menu';
+@import 'about';
+@import 'footer';
+
+body {
+  font-family: $font-family;
+  line-height: 1.6;
+  color: $primary-color;
+}
+
+.button {
+  @include rounded;
+  @include transition(background-color);
+  padding: 10px 20px;
+  background-color: $secondary-color;
+  color: rgb(24, 22, 22);
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+}

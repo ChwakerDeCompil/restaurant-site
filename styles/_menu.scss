@@ -1,0 +1,40 @@
+.menu {
+    padding: $padding-base;
+  
+    h2 {
+      color: $primary-color;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    h3 {
+      color: $secondary-color;
+      margin-top: 30px;
+    }
+  
+    ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+  
+      li {
+      
+  
+        h4 {
+          margin-top: 0;
+        }
+  
+        .price {
+          font-weight: bold;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu ul {
+      grid-template-columns: 1fr;
+    }
+  }

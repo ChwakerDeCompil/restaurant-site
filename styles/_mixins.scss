@@ -1,0 +1,7 @@
+@mixin rounded($radius: 50px) {
+    border-radius: $radius;
+  }
+  
+  @mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+    transition: $property $duration $timing;
+  }

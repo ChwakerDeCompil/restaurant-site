@@ -1,0 +1,42 @@
+header {
+    background-color: $primary-color;
+    padding: $padding-base;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    img {
+      max-width: 150px;
+    }
+  
+    nav {
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+  
+        li {
+          a {
+            color: white;
+            text-decoration: none;
+            @include transition(color);
+  
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+  
+      nav ul {
+        margin-top: 20px;
+      }
+    }
+  }
